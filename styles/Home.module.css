@@ -1,0 +1,29 @@
+.d_encompass {
+    margin: 0 auto;
+    padding: 0;
+    height: 1240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.d_top {
+    height: 15%;
+}
+
+.d_objects {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.d_bottom {
+    height: 5%;
+    min-height: 50px;
+}
+
+.d_leftnodes {
+    width: 20%;
+    min-width: 100px;
+
+}
+
