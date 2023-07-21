@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import homestyle from '../styles/Home.module.css'
 import genstyle from '../styles/gen.module.css'
+
 export default function Home() {
     return (
         <>
@@ -38,20 +39,28 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={`${homestyle.d_mainsign} ${genstyle.div}`}>
-                        <div className={`${homestyle.sign} ${genstyle.div}`}>
+                        <div className={`${homestyle.sign} ${genstyle.div}`} id="scaler">
                             <h1 className={`${homestyle.h_sign} ${genstyle.h1}`}>SPIRGE SOFTWARE</h1>
                         </div>
                         <div className={`${homestyle.signsub} ${genstyle.div}`}>
                             <h3 className={`${homestyle.h_signsub} ${genstyle.h3}`}>Web Development and Machine Learning</h3>
                         </div>
                     </div>
-                    <div className={`${homestyle.d_midnodes} ${genstyle.div}`}></div>
+                    <div className={`${homestyle.d_midnodes} ${genstyle.div}`}>
+                        <div className={`${homestyle.m_nodes} ${genstyle.div}`}>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                        </div>
+                    </div>
                     <div className={`${homestyle.d_mainlist} ${genstyle.div}`}>
                         <div className={`${homestyle.d_list} ${genstyle.div}`}>
                             <ul className={`${homestyle.list}`}>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/about">ABOUT</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/products">PRODUCTS</Link></li>
-                                <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/examples">EXAMPLES</Link></li>
+                                <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/examples">PORTFOLIO</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/projects">PROJECTS</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/contact">CONTACT</Link></li>
                             </ul>
