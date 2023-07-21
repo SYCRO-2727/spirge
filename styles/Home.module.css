@@ -1,13 +1,20 @@
+.full_env {
+    background: #272727;
+}
+
+/* Primary level divs */
 .d_encompass {
     margin: 0 auto;
     padding: 0;
-    height: 1240px;
+    height: 98vh;
+    width: 98vw;
     display: flex;
     flex-direction: column;
+    background: var(--background-theme);
 }
 
 .d_top {
-    height: 15%;
+    height: 10%;
 }
 
 .d_objects {
@@ -17,13 +24,126 @@
 }
 
 .d_bottom {
-    height: 5%;
+    height: 10%;
     min-height: 50px;
 }
 
-.d_leftnodes {
-    width: 20%;
-    min-width: 100px;
+/* Secondary level divs */
 
+.d_sidenodes {
+    margin: auto 0;
+    width: 20vw;
+    min-width: 100px;
 }
 
+.d_mainsign {
+    margin: auto 0;
+    width: 40vw;
+    height: 50%;
+}
+
+.d_midnodes {
+    margin: auto 0;
+    width: 15vw;
+}
+
+.d_mainlist {
+    margin: auto 0;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.node {
+    margin: 5px auto;
+    padding: 0;
+    height: 1vh;
+    background: var(--theme-color);
+    box-shadow: var(--box-shadow-1);
+}
+
+.sign {
+    border: 4px solid var(--theme-color);
+    height: 40%;
+    position: relative;
+    top: 11vh;
+    box-shadow: var(--box-shadow-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.h_sign {
+    font-size: 5vm;
+    color: var(--theme-color)
+}
+
+.signsub {
+    height: 15%;
+    position: relative;
+    top: 11vh;
+    text-align: center;
+}
+
+.h_signsub {
+    font-size: 24px;
+    color: var(--theme-color);
+}
+
+/* Add rotated nodes here */
+
+.d_list {
+    height: 46vh;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--theme-color);
+    box-shadow: var(--box-shadow-1);
+    z-index: 999;
+}
+
+.list {
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    width: 16vw;    
+}
+
+.li_buttons {
+    list-style: none;
+    margin: 1.5vh 0;
+    padding: 0;
+    width: 16vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:rgb(0, 174, 255);
+    box-shadow: -5px 5px 10px black;
+    border-radius: 15px 0px;
+    transition: transform .3s ease-in-out 0ms;
+}
+
+.link_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(2.5vw);
+    height: 7vh;
+    background-color: var(--background-theme);
+    text-decoration: none;
+    color: var(--theme-color);
+    border-radius: 15px 0px;
+    z-index: 999;
+    transition: transform .2s ease-in-out 0ms;
+    box-shadow: -5px 5px 10px black;
+}
+
+.li_buttons:hover, .link_buttons:hover {
+    color: rgb(0, 174, 255);
+    transform: rotate(5deg);
+}
