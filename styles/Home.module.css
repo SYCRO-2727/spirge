@@ -2,33 +2,50 @@
     background: #272727;
 }
 
+@media screen and (min-width:770px){
+
 /* Primary level divs */
 .d_encompass {
     margin: 0 auto;
     padding: 0;
     height: 98vh;
     width: 98vw;
+    min-height: 800px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     background: var(--background-theme);
 }
 
+.dropdown {
+    display: none;
+}
+
 .d_top {
     height: 10vh;
+    min-height: 80px;
 }
 
 .d_objects {
     display: flex;
     flex-direction: row;
     height: 80vh;
+    min-height: 640px;
 }
 
 .d_bottom {
     height: 10vh;
-    min-height: 50px;
+    min-height: 80px;
 }
 
 /* Secondary level divs */
+
+.logo {
+    height: 10vh;
+    width: 10vh;
+    min-height: 80px;
+    min-width: 80px;
+}
 
 .d_sidenodes {
     margin: auto 0;
@@ -40,12 +57,14 @@
     margin: auto 0;
     width: 40vw;
     height: 50%;
+    min-height: 320px;
 }
 
 .d_midnodes {
     margin: auto 0;
     width: 15vw;
     height: 100%;
+    min-height: 640px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +74,7 @@
     margin: auto 0;
     width: 20vw;
     height: 100%;
+    min-height: 640px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +82,8 @@
 
 .m_nodes {
     height: 60%;
-    width: 100%;
+    width: 92%;
+    min-height: 408px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,10 +106,11 @@
     min-height: 5px;
     background: var(--theme-color);
     z-index: 0;
+    box-shadow: -5px 5px 5px black;
 }
 
 .link_node:nth-child(1) {
-    padding: 1px 65%;
+    padding: 1px 70%;
     transform-origin: left;
     transform: rotate(-30deg)
 }
@@ -108,7 +130,7 @@
     transform: rotate(15deg)
 }
 .link_node:nth-child(5) {
-    padding: 1px 65%;
+    padding: 1px 70%;
     transform-origin: left;
     transform: rotate(30deg)
 }
@@ -124,10 +146,12 @@
 /* Logo sign */
 .sign {
     border: 4px solid var(--theme-color);
-    height: 40%;
+    height: 25%;
+    width: 100%;
     min-height: 50px;
+    min-width: 200px;
     position: relative;
-    top: 11vh;
+    top: 37%;
     box-shadow: var(--box-shadow-1);
     background: var(--background-theme);
     display: flex;
@@ -145,14 +169,16 @@
 }
 
 .h_sign {
+    min-height: 50px;
     font-size: 3vw;
     color: var(--theme-color)
 }
 
+@media screen and (min-width: 1600px) {
 .signsub {
     height: 15%;
     position: relative;
-    top: 11vh;
+    top: 32%;
     text-align: center;
 }
 
@@ -160,13 +186,28 @@
     font-size: 1.5vw;
     color: var(--theme-color);
 }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 770px) {
+.signsub {
+    height: 15%;
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+.h_signsub {
+    font-size: 1.5vw;
+    color: var(--theme-color);
+}
+}
 
 /* Add rotated nodes here */
 
 .d_list {
-    height: 46vh;
+    height: 70%;
     width: 18vw;
     min-height: 275px;
+    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,18 +217,24 @@
 }
 
 .list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding-left: 0;
-    width: 16vw;    
+    width: 100%;
+    height: 100%;
+    min-height: 275px;
+    min-width: 200px;
+    border: 1px solid blue;
 }
 
 .li_buttons {
     list-style: none;
-    margin: 12px 0;
+    margin: 10px auto;
     padding: 0;
-    width: 16vw;
-    height: 7vh;
+    width: 90%;
+    height: 20%;
     min-height: 40px;
     display: flex;
     flex-direction: column;
@@ -203,7 +250,7 @@
     flex-direction: column;
     justify-content: center;
     font-size: calc(2.5vw);
-    height: 7vh;
+    height: 100%;
     min-height: 40px;
     background-color: var(--background-theme);
     text-decoration: none;
@@ -224,4 +271,58 @@
     transition: transform 2s ease-in;
     transform: scale(3);
     z-index: 1000;
+}
+}
+
+@media screen and (max-width: 769px) {
+/* Primary level divs */
+.d_encompass {
+    margin: 0 auto;
+    padding: 0;
+    height: 98vh;
+    width: 98vw;
+    max-height: 1200px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-theme);
+}
+
+.d_top {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--theme-color);
+}
+
+.d_objects {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_bottom {
+    height: 5vh;
+}
+
+.d_mainlist {
+    display: none;
+}
+
+.logo {
+    height: 10vh;
+    width: 10vh;
+    min-height: 10vh;
+    min-width: 10vh;
+}
+
+.dropdown {
+    height: 10vh;
+    width: 10vh;
+}
+
+
+
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import homestyle from '../styles/Home.module.css'
 import genstyle from '../styles/gen.module.css'
-
+import Dropdown from '../components/dropdown'
 export default function Home() {
     return (
         <>
@@ -21,12 +21,14 @@ export default function Home() {
                     <Link href='#'>
                         <Image 
                         priority
+                        className={`${homestyle.logo}`}
                         src='/../public/images/logo/vexaro-512.png'
                         height={80}
                         width={80}
                         alt='site-logo'
                         />
                     </Link>
+                    <div className={`${homestyle.dropdown} ${genstyle.div}`}><Dropdown></Dropdown></div>
                 </div>
                 <div className={`${homestyle.d_objects} ${genstyle.div}`}>
                     <div className={`${homestyle.d_sidenodes}`}>
@@ -49,10 +51,10 @@ export default function Home() {
                     <div className={`${homestyle.d_midnodes} ${genstyle.div}`}>
                         <div className={`${homestyle.m_nodes} ${genstyle.div}`}>
                             <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
-                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
-                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
-                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
-                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/about"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/products"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/portfolio"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/projects"></Link>
+                            <Link className={`${homestyle.link_node} ${genstyle.link}`} href="/main/contact"></Link>
                         </div>
                     </div>
                     <div className={`${homestyle.d_mainlist} ${genstyle.div}`}>
@@ -60,7 +62,7 @@ export default function Home() {
                             <ul className={`${homestyle.list}`}>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/about">ABOUT</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/products">PRODUCTS</Link></li>
-                                <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/examples">PORTFOLIO</Link></li>
+                                <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/portfolio">PORTFOLIO</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/projects">PROJECTS</Link></li>
                                 <li className={`${homestyle.li_buttons}`}><Link className={`${homestyle.link_buttons} ${genstyle.link}`} href="/main/contact">CONTACT</Link></li>
                             </ul>
