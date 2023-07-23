@@ -171,6 +171,8 @@
     box-shadow: var(--box-shadow-1);
     background: var(--background-theme);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 999;
 }
 
