@@ -3,7 +3,17 @@
 }
 
 @media screen and (min-width:770px){
+/* No shows */
+.dropdown {
+    display: none;
+}
+.title {
+    display: none;
+}
 
+.title_text {
+    display: none;
+}
 /* Primary level divs */
 .d_encompass {
     margin: 0 auto;
@@ -17,13 +27,11 @@
     background: var(--background-theme);
 }
 
-.dropdown {
-    display: none;
-}
-
 .d_top {
     height: 10vh;
-    min-height: 80px;
+    min-height: 110px;
+    position: sticky;
+    top: 0;
 }
 
 .d_objects {
@@ -41,10 +49,18 @@
 /* Secondary level divs */
 
 .logo {
-    height: 10vh;
-    width: 10vh;
-    min-height: 80px;
-    min-width: 80px;
+    height: 110px;
+    width: 110px;
+    min-height: 110px;
+    min-width: 110px;
+}
+
+.logo_img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/images/logo/vexaro-512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .d_sidenodes {
@@ -155,8 +171,6 @@
     box-shadow: var(--box-shadow-1);
     background: var(--background-theme);
     display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 999;
 }
 
@@ -169,7 +183,7 @@
 }
 
 .h_sign {
-    min-height: 50px;
+    margin: auto;
     font-size: 3vw;
     color: var(--theme-color)
 }
@@ -226,7 +240,6 @@
     height: 100%;
     min-height: 275px;
     min-width: 200px;
-    border: 1px solid blue;
 }
 
 .li_buttons {
@@ -276,28 +289,46 @@
 
 @media screen and (max-width: 769px) {
 /* Primary level divs */
+.full_env {
+    display: flex;
+    justify-content: center;
+    max-width: 770px;
+    min-width: 320px;
+}
+
 .d_encompass {
-    margin: 0 auto;
-    padding: 0;
+    margin: auto;
     height: 98vh;
     width: 98vw;
     max-height: 1200px;
     max-width: 720px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     background: var(--background-theme);
 }
 
 .d_top {
-    height: 10vh;
+    margin: 0 auto;
+    min-height: 80px;
+    max-height: 80px;
+    width: 100%;
+    min-width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid var(--theme-color);
+    border-bottom: 6px solid var(--theme-color);
+    box-shadow: -0px 0px 20px black;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 5px;
 }
 
 .d_objects {
+    margin: 0 auto;
     height: 85vh;
+    width: 100%;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,6 +336,8 @@
 
 .d_bottom {
     height: 5vh;
+    width: 100%;
+    min-width: 320px;
 }
 
 .d_mainlist {
@@ -312,17 +345,124 @@
 }
 
 .logo {
-    height: 10vh;
     width: 10vh;
-    min-height: 10vh;
-    min-width: 10vh;
+    height: 10vh;
+    min-height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.logo_img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/images/logo/vexaro-512.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.title {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-top: 5px solid var(--theme-color);
+    border-right: 5px solid var(--theme-color);
+    border-left: 5px solid var(--theme-color);
+}
+
+.title_text {
+    font-size: calc(10vw*10vh);
+    color: var(--theme-color);
 }
 
 .dropdown {
+    width: 14vh;
     height: 10vh;
-    width: 10vh;
+    min-height: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    max-width: 80px;
 }
 
+.d_sidenodes {
+    height: 40%;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.l_nodes {
+    margin: auto 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.r_nodes {
+    margin: auto 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.d_midnodes {
+    display: none;
+}
+
+.node {
+    margin: auto 5px;
+    height: 100%;
+    width: 4px;
+    background: var(--theme-color);
+    box-shadow: -3px 3px 5px black;
+}
+
+.d_mainsign {
+    margin: 0 auto;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -3px 3px 5px black;
+    z-index: 999;
+}
+
+.sign {
+    height: 70%;
+    padding: 5px;
+    border: 1px solid var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.h_sign {
+    color: var(--theme-color);
+    font-size: 38px;
+}
+
+.signsub {
+    height: 30%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--theme-color);
+}
+
+.h_signsub {
+    color: var(--theme-color);
+    font-size: 20px;
+}
 
 
 }

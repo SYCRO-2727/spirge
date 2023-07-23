@@ -1,6 +1,6 @@
 .div {
     --theme-color: #c9ab00;
-    --box-shadow-1: -5px 5px 5px rgb(0, 0, 0);
+    --box-shadow-1: 0px 0px 15px rgb(0, 0, 0);
     --background-theme: #272727;
 }
 

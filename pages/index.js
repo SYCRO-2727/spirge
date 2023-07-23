@@ -9,6 +9,7 @@ export default function Home() {
         <>
         <Head>
             <title>Spirge | Software and Web Design</title>
+            <link rel="icon" sizes="48x48" href="favicon/spirge-48.ico?"></link>
             <meta 
                 property="og:title" 
                 content="Spirge | Software and Web Design" />
@@ -18,17 +19,13 @@ export default function Home() {
         <body className={`${homestyle.full_env}`}>
             <div className={`${homestyle.d_encompass} ${genstyle.div}`}>            
                 <div className={`${homestyle.d_top} ${genstyle.div}`}>
-                    <Link href='#'>
-                        <Image 
-                        priority
-                        className={`${homestyle.logo}`}
-                        src='/../public/images/logo/vexaro-512.png'
-                        height={80}
-                        width={80}
-                        alt='site-logo'
-                        />
-                    </Link>
-                    <div className={`${homestyle.dropdown} ${genstyle.div}`}><Dropdown></Dropdown></div>
+                <Link href='#'><div className={`${homestyle.logo} ${genstyle.div}`}>
+                        <div className={`${homestyle.logo_img} ${genstyle.div}`}/></div>
+                </Link>
+                    <div className={`${homestyle.title} ${genstyle.div}`}>
+                        <h1 className={`${homestyle.title_text} ${genstyle.h1}`}>SPIRGE</h1>
+                    </div>
+                <div className={`${homestyle.dropdown} ${genstyle.div}`}></div>
                 </div>
                 <div className={`${homestyle.d_objects} ${genstyle.div}`}>
                     <div className={`${homestyle.d_sidenodes}`}>
