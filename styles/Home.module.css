@@ -1,5 +1,6 @@
 .full_env {
     background: #272727;
+    overflow: hidden;
 }
 
 @media screen and (min-width:770px){
@@ -18,8 +19,8 @@
 .d_encompass {
     margin: 0 auto;
     padding: 0;
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     min-height: 800px;
     min-width: 500px;
     display: flex;
@@ -298,8 +299,8 @@
 
 .d_encompass {
     margin: auto;
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     max-height: 1200px;
     max-width: 720px;
     min-width: 320px;

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Layout = ({ isMobile }) => {
+export default function Layout({ isMobile, mainData }) {
     if (isMobile) {
         return (
             <>
@@ -9,9 +9,8 @@ const Layout = ({ isMobile }) => {
         );
     } else if (!isMobile) {
         return (
-            <></>
+            <>
+            </>
         )
     }
-};
-
-export default Layout;
+}

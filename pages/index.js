@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import Link from 'next/link'; 
 import Image from 'next/image';
 import homestyle from '../styles/Home.module.css'
@@ -8,16 +9,14 @@ export default function Home() {
     return (
         <>
         <Head>
-            <title>Spirge | Software and Web Design</title>
+        <title>Spirge | Software and Web Design</title>
             <link rel="icon" href="/favicon.png"></link>
-            <meta 
-                property="og:title" 
-                content="Spirge | Software and Web Design" />
+            <meta property="og:title" content="Spirge | Software and Web Design" />
             <meta property="og:type" content="website" />
             <meta name="description" content="Spirge is a machine learning software distribution platform and web design company started by teen developers Nathaniel Sun and Davis Miller." />
         </Head>
-        <body className={`${homestyle.full_env}`}>
-            <div className={`${homestyle.d_encompass} ${genstyle.div}`}>            
+        <section className={`${homestyle.full_env}`}>
+        <div className={`${homestyle.d_encompass} ${genstyle.div}`}>            
                 <div className={`${homestyle.d_top} ${genstyle.div}`}>
                 <Link href='#'><div className={`${homestyle.logo} ${genstyle.div}`}>
                         <div className={`${homestyle.logo_img} ${genstyle.div}`}/></div>
@@ -78,7 +77,7 @@ export default function Home() {
                 </div>
                 <div className={`${homestyle.d_bottom} ${genstyle.div}`}></div>
             </div>
-        </body>
+        </section>
         </>
     )
 }
