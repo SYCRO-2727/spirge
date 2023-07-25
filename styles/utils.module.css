@@ -1,51 +1,75 @@
 .list {
     color: red;
 }
+/* Mobile dropdown */
 
-.d_dropdown {
-    height: 100%;
+.dropdown_main {
     width: 100%;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    z-index: 999;
-    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .dropdown_button {
-    height: 150%;
-    width: 150%;
-    background: none;
-    cursor: default;
-    position: relative;
-    top: -25%;
-    left: -25%;    
-    z-index: 999
+    width: 100%;
+    height: 100%;
+    background: var(--background-theme);
+    padding: 0;
+    border: none;
+    font-size: 60px;
+    text-align: center;
+    color: var(--theme-color);
 }
 
 .dropdown_content {
-    display: block;
-    position: absolute;
+    display: none;
     width: 200px;
-    height: 400px;
-    top:200px;
-    left: -400px;
+    overflow: auto;
+    background: var(--background-theme);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+    z-index: 999;
+}
+
+.dropdown_option {
+    background: var(--background-theme);
     color: var(--theme-color);
-    overflow: none;
-    box-shadow: -5px 5px 5px black;
+    margin: 10px 5px;
+    padding: 18px 0px;
+    border-radius: 15px 0px;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.d_dropdown:hover .dropdown_content {
-    display: block;
-    background: black;
-}
-
-.dropdown_content .dropdown_link {
-    display: block;
-    color: #c9ab00;
-    padding: 5px;
+.linkd {
+    color: var(--theme-color);
     text-decoration: none;
 }
 
-.dropdown_content .dropdown_link:hover {
-    color: rgb(135, 217, 255);
+@keyframes spandown {
+    0% {transform: scaleY(0)};
+    100% {transform: scaleY(1)};
+}
+
+.dropdown_main:hover .dropdown_content {
+    display: block;
+    transform-origin: top;
+    animation-name: spandown;
+    animation-duration: .5s;
+}
+
+.dropdown_button:hover {
+    background: #171717;
+}
+
+.dropdown_content:hover .dropdown_button {
+    background: rgb(0, 174, 255);
+}
+
+.dropdown_option:hover {
+    background: rgb(0, 174, 255);
 }

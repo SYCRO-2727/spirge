@@ -3,13 +3,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import homestyle from '../styles/Home.module.css'
 import genstyle from '../styles/gen.module.css'
-import Dropdown from '../components/dropdown'
+import MobileMenu from '../components/dropdown'
 export default function Home() {
     return (
         <>
         <Head>
             <title>Spirge | Software and Web Design</title>
-            <link rel="icon" sizes="48x48" href="favicon/spirge-48.ico?"></link>
+            <link rel="icon" href="/favicon.png"></link>
             <meta 
                 property="og:title" 
                 content="Spirge | Software and Web Design" />
@@ -25,7 +25,7 @@ export default function Home() {
                     <div className={`${homestyle.title} ${genstyle.div}`}>
                         <h1 className={`${homestyle.title_text} ${genstyle.h1}`}>SPIRGE</h1>
                     </div>
-                <div className={`${homestyle.dropdown} ${genstyle.div}`}></div>
+                <div className={`${homestyle.dropdown} ${genstyle.div}`}><MobileMenu /></div>
                 </div>
                 <div className={`${homestyle.d_objects} ${genstyle.div}`}>
                     <div className={`${homestyle.d_sidenodes}`}>
