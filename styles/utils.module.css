@@ -25,7 +25,9 @@
 .dropdown_content {
     display: none;
     width: 200px;
-    overflow: auto;
+    height: 70vh;
+    max-height: 418px;
+    overflow: scroll;
     background: var(--background-theme);
     position: absolute;
     top: 80px;

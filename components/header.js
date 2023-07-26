@@ -1,9 +1,11 @@
 //Header component for layout - add more styles if needed
 import Link from 'next/link'
 import styles from '../components/component-styles/header.module.css'
-const Header = ({ isMobile }) => {
-    if (!isMobile) {
+import Dropdown from '../components/dropdown'
+
+const Header = () => {
     return (
+        <>
         <header className={`${styles.regHeader}`}>
             <div className={styles.regEncompass}>
             <Link href="../"><div className={`${styles.regImage}`}></div></Link>
@@ -19,11 +21,15 @@ const Header = ({ isMobile }) => {
                 </ul>
             </nav>
         </header>
-    )} else if (isMobile) {
-        return (
-            <header className={styles.mobileHeader}></header>
-        )
-    }
+        <header className={styles.mobileHeader}>
+            <div className={styles.mobileEncompass}>
+                <Link href="../"><div className={styles.mobileImage}></div></Link>
+                <div className={styles.mobileLogo}><h1 className={styles.mobileLogo_text}>PIRGE</h1></div>
+            </div>
+            <div className={styles.mobileDropdown}><Dropdown></Dropdown></div>
+        </header>
+        </>
+    );
 }
 
 export default Header;
