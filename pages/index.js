@@ -1,11 +1,13 @@
 import Head from 'next/head';
-
 import Link from 'next/link'; 
 import Image from 'next/image';
 import homestyle from '../styles/Home.module.css'
 import genstyle from '../styles/gen.module.css'
 import MobileMenu from '../components/dropdown'
-export default function Home() {
+
+
+const Home = () => {
+
     return (
         <>
         <Head>
@@ -81,3 +83,5 @@ export default function Home() {
         </>
     )
 }
+Home.needsLayout = false;
+export default Home;

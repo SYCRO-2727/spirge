@@ -1,7 +1,6 @@
 import styles from '../styles/utils.module.css'
 import genstyle from '../styles/gen.module.css'
 import Link from 'next/link'
-import { useState } from 'react'
 
 const MobileMenu = () => {
     return (

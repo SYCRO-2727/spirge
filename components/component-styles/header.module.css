@@ -1,0 +1,73 @@
+/* Styles for regular viewport */
+
+.regHeader {
+    width: 100%;
+    max-height: 80px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 5px black;
+    backdrop-filter: blur(5px);
+    background: var(--background-theme);
+}
+
+.regEncompass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.regImage {
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../public/images/logo/spirge-512.png)
+}
+
+.regLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regLogo_text {
+    font-size: 40px;
+    color: var(--theme-color);
+}
+
+.regNav {
+    margin: auto;
+}
+
+.regList {
+    padding-left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.regOption {
+    height: 80px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regOption:hover {
+    background: #171717;
+}
+
+.regLink {
+    padding: 30px 0px;
+    text-decoration: none;
+    color: var(--theme-color);
+}
