@@ -77,3 +77,36 @@
 }
 
 /* Fin mobile dropdown */
+
+/* Nodes styles */
+.nodecase_h {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nodecase_v {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.node_v {
+    margin: auto 5px;
+    height: 100%;
+    width: 4px;
+    background: var(--theme-color);
+    box-shadow: -3px 3px 5px black;
+}
+
+.node_h {
+    margin: 5px auto;
+    height: 4px;
+    width: 100%;
+    background: var(--theme-color);
+    box-shadow: -3px 3px 5px black;
+}
