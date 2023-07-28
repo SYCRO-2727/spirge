@@ -92,6 +92,6 @@
     .dev_about_text {
         height: 80%;
         width: 90%;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 }
