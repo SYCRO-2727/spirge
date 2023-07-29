@@ -25,3 +25,30 @@ export default function handler(req, res) {
     }
   });
 }
+
+//use the following function to read from api
+/*
+    const [dev_info, setFileContents] = useState(['']);
+    const dev_files = [
+        '/content/dev-cards/text/natesun.txt',
+        '/content/dev-cards/text/davismiller.txt'
+    ];
+    useEffect(() => {
+        const fetchFileContent = async (filepath) => {
+          try {
+            const response = await fetch(`/api/readFile?filepath=${encodeURIComponent(filepath)}`);
+            const data = await response.json();
+            return data.content;
+          } catch (error) {
+            console.error('Error fetching file:', error);
+            return '';
+          }
+        };
+        const fetchAllFiles = async () => {
+            const contents = await Promise.all(dev_files.map(fetchFileContent));
+            setFileContents(contents);
+          };
+      
+          fetchAllFiles();
+        }, []);
+*/

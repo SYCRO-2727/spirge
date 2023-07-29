@@ -96,16 +96,16 @@
 }
 
 .node_v {
-    margin: auto 5px;
+    margin: auto 4px;
     height: 100%;
-    width: 4px;
+    width: 6px;
     background: var(--theme-color);
     box-shadow: -3px 3px 5px black;
 }
 
 .node_h {
-    margin: 5px auto;
-    height: 4px;
+    margin: 4px auto;
+    height: 6px;
     width: 100%;
     background: var(--theme-color);
     box-shadow: -3px 3px 5px black;
