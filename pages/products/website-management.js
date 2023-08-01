@@ -5,5 +5,5 @@ const WebManage = () => {
         </div>
     )
 }
-
+WebManage.needsLayout = true;
 export default WebManage;
