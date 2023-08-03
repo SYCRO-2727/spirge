@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link'; 
-import Image from 'next/image';
-import Footer from '../components/footer'
 import homestyle from '../styles/Home.module.css'
 import genstyle from '../styles/gen.module.css'
 import MobileMenu from '../components/dropdown'
@@ -78,7 +76,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`${homestyle.d_bottom} ${genstyle.div}`}><Footer></Footer></div>
+                <div className={`${homestyle.d_bottom} ${genstyle.div}`}></div>
             </div>
         
         </section>

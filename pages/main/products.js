@@ -43,7 +43,7 @@ const Products = () => {
                 </div>
                 <div className={styles.product}>
                     <Product
-                        name="Custom machine learning models with Tensorflow (coming soon)"
+                        name="Machine learning models with Tensorflow (coming soon)"
                         description="Spirge can meet your company machine learning needs! You provide us with the data, we will provide you with the model! Check the product page for details &rarr;"
                         productpage="/products/machine-learning"
                         imageurl="/images/product-images/tensorflow.jpg"

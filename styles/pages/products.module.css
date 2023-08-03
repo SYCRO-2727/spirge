@@ -41,6 +41,7 @@
         flex-direction: column;
         justify-content: center;
         border: 2px solid var(--theme-color);
+        border-bottom: none;
         box-shadow: -5px 5px 5px black;
     }
     .product {
