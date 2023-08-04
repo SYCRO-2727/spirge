@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className={styles.geninq}>
             <h1 className={styles.h1}>Contact the devs:</h1>
-            <h2 className={styles.h2}>Nathaniel Sun - T: +1 832-352-5772 E: <Link className={styles.link} href="mailto:nathaniel.sun.spirge@gmail.com">nathaniel.sun.spirge@gmail.com</Link></h2>
+            <h2 className={styles.h2}>Nathaniel Sun - T: +1 832-352-5772 | E: <Link className={styles.link} href="mailto:nathaniel.sun.spirge@gmail.com">nathaniel.sun.spirge@gmail.com</Link></h2>
             <h2 className={styles.h2}>Davis Miller - E: <Link href="mailto:davis.miller.spirge@gmail.com" className={styles.link}>davis.miller.spirge@gmail.com</Link></h2>
         </div>
     </section>)

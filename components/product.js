@@ -16,7 +16,7 @@ const Product = ({ name, description, productpage, imageurl }) => {
                     height="150"
                     src={imageurl}
                     style={{
-                        objectFit: 'cover',
+                        objectFit: 'cover'
                     }}
                     alt="product image">
                 </Image>

@@ -12,7 +12,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product 
                         name="Custom web development with NextJS"
-                        description="Spirge offers custom web development from scratch using NextJS for advanced and streamlined web applications. Starting from just $199! Check the product page for pricing &rarr;"
+                        description="Spirge offers custom web development from scratch using NextJS for advanced and streamlined web applications. Starting from just $199! Check the product page for pricing!"
                         productpage="/products/next-website"
                         imageurl="/images/product-images/next2.jpeg"
                     />
@@ -20,7 +20,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product
                         name="Custom web development with pure HTML, CSS, and JS"
-                        description="Prefer typical web development strategies? Spirge also offers web development using pure, classic coding in HTML, CSS, and Javascript. Check the product page for pricing &rarr;"
+                        description="Prefer typical web development strategies? Spirge also offers web development using pure, classic coding in HTML, CSS, and Javascript. Check the product page for pricing!"
                         productpage="/products/classic-website"
                         imageurl="/images/product-images/html2.png"
                     />
@@ -28,7 +28,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product
                         name="Web development with WordPress"
-                        description="Spirge offers the capability to advance your company using WordPress prebuilt templates! Check the product page for details &rarr;"
+                        description="Spirge offers the capability to advance your company using WordPress prebuilt templates! Check the product page for details!"
                         productpage="/products/wordpress-website"
                         imageurl="/images/product-images/wordpress2.png"
                     />
@@ -36,7 +36,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product
                         name="Custom web scraping bots with Python"
-                        description="Spirge can suit your web scraping needs from price monitoring to html data mining! Check the product page for pricing &rarr;"
+                        description="Spirge can suit your web scraping needs from price monitoring to html data mining! Check the product page for pricing!"
                         productpage="/products/web-scraping"
                         imageurl="/images/product-images/python.jpeg"
                     />
@@ -44,7 +44,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product
                         name="Machine learning models with Tensorflow (coming soon)"
-                        description="Spirge can meet your company machine learning needs! You provide us with the data, we will provide you with the model! Check the product page for details &rarr;"
+                        description="Spirge can meet your company machine learning needs! You provide us with the data, we will provide you with the model! Check the product page for details!"
                         productpage="/products/machine-learning"
                         imageurl="/images/product-images/tensorflow.jpg"
                     />
@@ -52,7 +52,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product 
                         name="Website hosting management"
-                        description="Spirge can manage hosting and upkeep of your website, so you don't have to! Check the product page for pricing &rarr;"
+                        description="Spirge can manage hosting and upkeep of your website, so you don't have to! Check the product page for pricing!"
                         productpage="/products/website-management"
                         imageurl="/images/product-images/spirge-wide.png"
                     />
@@ -60,7 +60,7 @@ const Products = () => {
                 <div className={styles.product}>
                     <Product
                         name="SQL database management"
-                        description="Dealing with too many user accounts, profiles, products, and metadata to keep track of? Let us manage your database for you! Information here &rarr;"
+                        description="Dealing with too many user accounts, profiles, products, and metadata to keep track of? Let us manage your database for you! Information here!"
                         productpage="/products/data-management"
                         imageurl="/images/product-images/sql.png"
                     />
