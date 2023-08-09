@@ -1,0 +1,52 @@
+/* Styles for all product landing pages */
+.encompass {
+    background: var(--background-theme);
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 770px) {
+    .div_title {
+        margin: 20px auto;
+        padding: 0px 20px;
+        border: 2px solid var(--theme-color);
+        box-shadow: -5px 5px 5px black;
+    }
+    .div_title_text {
+        color: var(--theme-color);
+        font-size: 48px;
+    }
+    .div_info {
+        margin: auto;
+        padding: 40px 0px;
+        width: 100%;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .details {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid var(--theme-color);
+        box-shadow: -5px 5px 5px black;
+        position: relative;
+        z-index: 2;
+    }
+    .nodes {
+        width: 10%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    
+}

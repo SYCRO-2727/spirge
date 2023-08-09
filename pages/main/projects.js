@@ -37,4 +37,12 @@ const Projects = () => {
     )
 }
 Projects.needsLayout = true;
+Projects.title = "Spirge | Company projects"
+Projects.metadata = (  
+    <meta property="og:title" content={Projects.title} />,
+    <meta property="og:description" content="Spirge projects page" />,
+    <meta property="og:url" content="https://spirge.com/projects" />,
+    <meta name="twitter:title" content={Projects.title} />,
+    <meta name="twitter:description" content="Spirge projects page" />
+)
 export default Projects;

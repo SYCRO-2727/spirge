@@ -72,4 +72,12 @@ const Products = () => {
 }
 
 Products.needsLayout = true;
+Products.title = "Spirge | Products offered"
+Products.metadata = (  
+    <meta property="og:title" content={Products.title} />,
+    <meta property="og:description" content="Products offered by Spirge" />,
+    <meta property="og:url" content="https://spirge.com/products" />,
+    <meta name="twitter:title" content={Products.title} />,
+    <meta name="twitter:description" content="Products offered by Spirge" />
+)
 export default Products;

@@ -7,8 +7,6 @@
     flex-direction: column;
     justify-content: center;
 }
-
-@media screen and (min-width: 770px) {
     .nodes {
         margin: auto;
         width: 40%;
@@ -26,7 +24,8 @@
         display:flex;
         flex-direction: row;
         justify-content: center;
-    }
+    }    
+@media screen and (min-width: 770px) {
     .div_title {
         margin: 20px auto;
         padding: 0px 20px;
@@ -41,6 +40,29 @@
         margin: auto;
         width: 80%;
         max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid var(--theme-color);
+        box-shadow: -5px 5px 5px black;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .div_title {
+        margin: 10px auto;
+        padding: 0px 10px;
+        border: 2px solid var(--theme-color);
+        box-shadow: -5px 5px 5px black;
+    }
+    .div_title_text {
+        color: var(--theme-color);
+        font-size: 32px;
+    }
+    .project_case {
+        margin: auto;
+        width: 80%;
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;

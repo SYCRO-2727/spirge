@@ -19,4 +19,12 @@ const Contact = () => {
     </section>)
 }
 Contact.needsLayout = true;
+Contact.title = "Spirge | Contact the company"
+Contact.metadata = (  
+    <meta property="og:title" content={Contact.title} />,
+    <meta property="og:description" content="Spirge contact page" />,
+    <meta property="og:url" content="https://spirge.com/contact" />,
+    <meta name="twitter:title" content={Contact.title} />,
+    <meta name="twitter:description" content="Spirge contact page" />
+)
 export default Contact;

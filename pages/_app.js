@@ -3,9 +3,11 @@ import Layout from '../components/layout';
 
 function App({ Component, pageProps }) {
       const needsLayout = Component.needsLayout === true || Component.needsLayout;
+      const title = Component.title ? Component.title : "Spirge | Needs title lol";
+      const meta = Component.metadata
       if (needsLayout) {
       return (
-      <Layout mainData={<Component {...pageProps} />}></Layout>
+      <Layout pageTitle={title} metadata={meta} mainData={<Component {...pageProps} />}></Layout>
       ); 
       } else if (!needsLayout) {
             return (<Component {...pageProps} />)

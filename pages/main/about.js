@@ -50,4 +50,12 @@ const About = () => {
     );
 }
 About.needsLayout = true;
+About.title = "Spirge | About the company"
+About.metadata = (  
+    <meta property="og:title" content={About.title} />,
+    <meta property="og:description" content="Spirge about page and about developers" />,
+    <meta property="og:url" content="https://spirge.com/about" />,
+    <meta name="twitter:title" content={About.title} />,
+    <meta name="twitter:description" content="Spirge about page and about developers" />
+)
 export default About;

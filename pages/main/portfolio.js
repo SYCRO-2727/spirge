@@ -12,4 +12,12 @@ const Portfolio = () => {
     )
 }
 Portfolio.needsLayout = true;
+Portfolio.title = "Spirge | Company portfolio"
+Portfolio.metadata = (  
+    <meta property="og:title" content={Portfolio.title} />,
+    <meta property="og:description" content="Spirge portfolio page" />,
+    <meta property="og:url" content="https://spirge.com/portfolio" />,
+    <meta name="twitter:title" content={Portfolio.title} />,
+    <meta name="twitter:description" content="Spirge portfolio page" />
+)
 export default Portfolio;
