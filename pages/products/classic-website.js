@@ -12,7 +12,7 @@ const ClassSite = () => {
                     <p className={styles.p}>We can build your website with classic HTML, CSS, and Javascript if you so desire!</p>
                     <p className={styles.p}>Why choose classic instead of a web development framework like NextJS? Classic is a lightweight and simple approach to web design in comparison with newer frameworks. If your priorities for your site are quick optimization, simple structure, and ease of use, then classic is the choice for you.</p>
                     <p className={styles.p}>However, if you're website needs more intricate, complicated nuances such as blog implementation and interactive product pages, we'd recommend you consult with us for a more advanced framework to build your website with, such as <Link className={styles.link} href="next-website">NextJS</Link> or <Link className={styles.link} href="wordpress-website">WordPress</Link>.</p>
-                    <p className={styles.p}>Contact us by email with a wireframe drawing of how you'd like us to design your site, or a reference website! We'll email you back shortly with a consult price or if you'd like we can call you! From there we can work out the information you'd like to fill your site with. We'll also give you a time estimate for completion.</p>
+                    <p className={styles.p}><Link className={styles.link} href="/main/contact">Contact</Link> us by email with a wireframe drawing of how you'd like us to design your site, or a reference website! We'll email you back shortly with a consult price or if you'd like we can call you! From there we can work out the information you'd like to fill your site with. We'll also give you a time estimate for completion.</p>
                 </div>
                 <div className={styles.nodes}><Nodes direction={'horizontal'}/></div>
                 <div className={styles.details}>
@@ -31,4 +31,12 @@ const ClassSite = () => {
     )
 }
 ClassSite.needsLayout = true;
+ClassSite.title = 'Spirge Products | Pure HTML CSS and JS website'
+ClassSite.metadata = (  
+    <meta property="og:title" content={ClassSite.title} />,
+    <meta property="og:description" content="Spirge product website built in pure HTML CSS and JS" />,
+    <meta property="og:url" content="https://spirge.com/products/classic-website" />,
+    <meta name="twitter:title" content={ClassSite.title} />,
+    <meta name="twitter:description" content="Spirge product website built in pure HTML CSS and JS" />
+)
 export default ClassSite;
