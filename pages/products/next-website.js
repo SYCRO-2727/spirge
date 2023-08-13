@@ -12,7 +12,7 @@ const NextSite = () => {
                 <p className={styles.p}>We can offer you the powerful NextJS framework at your disposal for the most intricate, advanced web applications and sites possible!</p>
                 <p className={styles.p}>NextJS is a modern framework that allows high-quality complicated websites to run efficiently with almost no lag! While pure HTML is lightweight for small projects, it can quickly grow unmanageable as your site grows larger.</p>
                 <p className={styles.p}>NextJS offers a smooth interaction experience, improved SEO benefits over pure HTML websites, and less time spent duplicating code for webpages.</p>
-                <p className={styles.p}><Link className={styles.link} href="/main/contact">Contact</Link> us by email with a wireframe drawing of how you'd like us to design your site, or a reference website! We'll email you back shortly with a consult price or if you'd like we can call you! From there we can work out the information you'd like to fill your site with. We'll also give you a time estimate for completion.</p>
+                <p className={styles.p}><Link className={styles.link} href="/main/contact">Contact</Link> us by email with a wireframe drawing of how you'd like us to design your site, or a reference website! We'll email or call you back shortly with a consult price! From there we can work out the information you'd like to fill your site with. We'll also give you a time estimate for completion.</p>
             </div>
             <div className={styles.nodes}><Nodes direction={'horizontal'}/></div>
             <div className={styles.details}>
