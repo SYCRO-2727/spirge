@@ -5,7 +5,7 @@ import styles from '../../styles/pages/product-info.module.css'
 const WordSite = () => {
     return (
         <section className={styles.encompass}>
-        <div className={styles.div_title}><h1 className={styles.div_title_text}>Custom web development with NextJS</h1></div>
+        <div className={styles.div_title}><h1 className={styles.div_title_text}>Custom web development with WordPress</h1></div>
         <div className={styles.div_info}>
             <div className={styles.details}>
                 <h2 className={styles.h2}>Details</h2>
