@@ -9,7 +9,7 @@ const WordSite = () => {
         <div className={styles.div_info}>
             <div className={styles.details}>
                 <h2 className={styles.h2}>Details</h2>
-                <p className={styles.p}>If you're looking for a stylish and efficient website to bring your ideas to life, Spirge has you covered!</p>
+                <p className={styles.p}>If you&apos;re looking for a stylish and efficient website to bring your ideas to life, Spirge has you covered!</p>
                 <p className={styles.p}><Link href="https://wordpress.com/" className={styles.link}>WordPress</Link> is an awesome website production site offering customizable templates for quick website deployment.</p>
                 <p className={styles.p}>Using WordPress, Spirge can quickly provide you with an advanced template designed by teams of highly experienced website engineers, tailored specifically to your liking!</p>
                 <p className={styles.p}>With a WordPress template, all pressure to visualize your intricate website structure will quickly dissolve. All that work is already done for you! All you need to do is simply provide us with your template choice and the data to fill it with.</p>
